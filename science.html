@@ -30,7 +30,7 @@
     <h5 id="mhs">물화생</h5>
     <h5 id="hsj">화생지</h5>
     <h5 id="mhj">물화지</h5>
-    <h5 is="msj">물생지</h5>
+    <h5 id="msj">물생지</h5>
     <h6>직접 이동하려면 아래의 버튼을 누르세요.</h6>
     <button type="button" onclick="location.href='https://realette.github.io/2-6/sciencesel';">직접 이동</button>
 </body>
@@ -136,34 +136,35 @@
             self.location = "https://realette.github.io/2-6/sciencesel ";
         }
     }
+
     document.getElementById("msj").onclick = function() {
         if (yoil == 1) {
             //지구
-            alert("월요일 물생지는 생명입니다. ");
-            self.location = "https://realette.github.io/2-6/noinput ";
+            alert("월요일 물생지는 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
         } else if (yoil == 2) {
             //생명
-            alert("화요일 물생지는 지구입니다. ");
-            self.location = "https://realette.github.io/2-6/noinput ";
+            alert("화요일 물생지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
         } else if (yoil == 3) {
             //화학
-            alert("수요일 물생지는 물리입니다. ");
-            self.location = "https://realette.github.io/2-6/noinput ";
+            alert("수요일 물생지는 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
         } else if (yoil == 4 && hour <= 13) {
             //화학
-            alert("목요일 4교시 물생지는 물리입니다. ");
-            self.location = "https://realette.github.io/2-6/noinput ";
+            alert("목요일 4교시 물생지는 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
         } else if (yoil == 4 && hour >= 14) {
             //생명
-            alert("목요일 6교시 물생지는 지구입니다. ");
-            self.location = "https://realette.github.io/2-6/noinput ";
+            alert("목요일 6교시 물생지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
         } else if (yoil == 5) {
             //지구
-            alert("금요일 물생지는 생명입니다. ");
-            self.location = "https://realette.github.io/2-6/noinput ";
+            alert("금요일 물생지는 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
         } else {
-            alert("주말입니다. ");
-            self.location = "https://realette.github.io/2-6/sciencesel ";
+            alert("주말입니다.");
+            self.location = "https://realette.github.io/2-6/sciencesel";
         }
     }
 
