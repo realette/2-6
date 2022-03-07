@@ -3,77 +3,112 @@
 
 <head>
     <title>2학년 6반 시간표</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="build" content="2022.3.7">
     <meta name="author" content="주영욱">
     <meta name="lang" content="ko">
     <style>
-
+        body {
+            font-size: 200%;
+        }
+        
+        #title {
+            margin: 0;
+        }
+        
+        #box {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
-    <h1>2학년 6반</h1>
-    <table>
-        <tr class="yoil">
-            <th class="mon">월</th>
-            <th class="tue">화</th>
-            <th class="wed">수</th>
-            <th class="thu">목</th>
-            <th class="fri">금</th>
-        </tr>
-        <tr class="1cl">
-            <td class="mon">과학</td>
-            <td class="tue">한문</td>
-            <td class="wed">문학</td>
-            <td class="thu">수학</td>
-            <td class="fri">미창</td>
-        </tr>
-        <tr class="2cl">
-            <td class="mon">문학</td>
-            <td class="tue">운동</td>
-            <td class="wed">과학</td>
-            <td class="thu">운동</td>
-            <td class="fri">과학</td>
-        </tr>
-        <tr class="3cl">
-            <td class="mon">미창</td>
-            <td class="tue">문학</td>
-            <td class="wed">미창</td>
-            <td class="thu">영어</td>
-            <td class="fri">수학</td>
-        </tr>
-        <tr class="4cl">
-            <td class="mon">생윤</td>
-            <td class="tue">과학</td>
-            <td class="wed">영어</td>
-            <td class="thu">과학</td>
-            <td class="fri">창진</td>
-        </tr>
-        <tr class="lunch">
-            <td class="everyday" colspan="5">점심시간</td>
-        </tr>
-        <tr class="5cl">
-            <td class="mon">영어</td>
-            <td class="tue">영어</td>
-            <td class="wed">창체</td>
-            <td class="thu">문학</td>
-            <td class="fri">생윤</td>
-        </tr>
-        <tr class="6cl">
-            <td class="mon">진로</td>
-            <td class="tue">수학</td>
-            <td class="wed">창체</td>
-            <td class="thu">과학</td>
-            <td class="fri">문학</td>
-        </tr>
-        <tr class="7cl">
-            <td class="mon">수학</td>
-            <td class="tue">창봉</td>
-            <td class="wed"></td>
-            <td class="thu">한문</td>
-            <td class="fri">영어</td>
-        </tr>
-    </table>
+    <div id="box">
+        <h1 id="title">2학년 6반</h1>
+        <table border="1px">
+            <tr class="yoil">
+                <th></th>
+                <th class="mon">월</th>
+                <th class="tue">화</th>
+                <th class="wed">수</th>
+                <th class="thu">목</th>
+                <th class="fri">금</th>
+            </tr>
+            <tr class="fir">
+                <td>1교시</td>
+                <td id="monfir" class="mon"><a target="_blank" href="">과학</a></td>
+                <td id="tuefir" class="tue"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/okringg6">한문</a></td>
+                <td id="wedfir" class="wed"><a target="_blank" href="https://realette.github.io/2-6/noinput">문학</a></td>
+                <td id="thufir" class="thu"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkxMDc4">수학</a></td>
+                <td id="frifir" class="fri"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92">미창</a></td>
+            </tr>
+            <tr class="sec">
+                <td>2교시</td>
+                <td id="monsec" class="mon"><a target="_blank" href="https://realette.github.io/2-6/noinput">문학</a></td>
+                <td id="tuesec" class="tue"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/khsports56789">운동</a></td>
+                <td id="wedsec" class="wed"><a target="_blank" href="">과학</a></td>
+                <td id="thusec" class="thu"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/khsports56789">운동</a></td>
+                <td id="frisec" class="fri"><a target="_blank" href="">과학</a></td>
+            </tr>
+            <tr class="thi">
+                <td>3교시</td>
+                <td id="monthi" class="mon"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92">미창</a></td>
+                <td id="tuethi" class="tue"><a target="_blank" href="https://realette.github.io/2-6/noinput">문학</a></td>
+                <td id="wedthi" class="wed"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92">미창</a></td>
+                <td id="thuthi" class="thu"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
+                <td id="frithi" class="fri"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkxMDc4">수학</a></td>
+            </tr>
+            <tr class="fou">
+                <td>4교시</td>
+                <td id="monfou" class="mon"><a target="_blank" href="https://realette.github.io/2-6/noinput">생윤</a></td>
+                <td id="tuefou" class="tue"><a target="_blank" href="">과학</a></td>
+                <td id="wedfou" class="wed"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
+                <td id="thufou" class="thu"><a target="_blank" href="">과학</a></td>
+                <td id="frifou" class="fri"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sangbogi26">창진</a></td>
+            </tr>
+            <tr class="lunch">
+                <td></td>
+                <td class="everyday" colspan="5">점심시간</td>
+            </tr>
+            <tr class="fif">
+                <td>5교시</td>
+                <td id="monfif" class="mon"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
+                <td id="tuefif" class="tue"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
+                <td id="wedfif" class="wed"><a target="_blank" href="">창체</a></td>
+                <td id="thufif" class="thu"><a target="_blank" href="https://realette.github.io/2-6/noinput">문학</a></td>
+                <td id="frifif" class="fri"><a target="_blank" href="https://realette.github.io/2-6/noinput">생윤</a></td>
+            </tr>
+            <tr class="six">
+                <td>6교시</td>
+                <td id="monsix" class="mon"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/jinro56">진로</a></td>
+                <td id="tuesix" class="tue"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkxMDc4">수학</a></td>
+                <td id="wedsix" class="wed"><a target="_blank" href="">창체</a></td>
+                <td id="thusix" class="thu"><a target="_blank" href="">과학</a></td>
+                <td id="frisix" class="fri"><a target="_blank" href="https://realette.github.io/2-6/noinput">문학</a></td>
+            </tr>
+            <tr class="sev">
+                <td>7교시</td>
+                <td id="monsev" class="mon"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkxMDc4">수학</a></td>
+                <td id="tuesev" class="tue"><a target="_blank" href="https://realette.github.io/2-6/noinput">창봉</a></td>
+                <td id="wedsev" class="wed"></td>
+                <td id="thusev" class="thu"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/okringg6">한문</a></td>
+                <td id="frisev" class="fri"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+    </script>
+
 </body>
 
 </html>

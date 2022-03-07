@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-size: 150%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>과학 선택</h3>
+    <h6>연결하려면 하나를 선택하여 누르면 자동으로 이동됩니다.</h6>
+    <h5 id="mhs">물화생</h5>
+    <h5 id="hsj">화생지</h5>
+    <h5 id="mhj">물화지</h5>
+    <h5 is="msj">물생지</h5>
+    <h6>직접 이동하려면 아래의 버튼을 누르세요.</h6>
+    <button id="button"></button>
+</body>
+<script>
+    today = new Date();
+    var month = today.getMonth() + 1;
+    //1=1월, 2=2월, 3=3월, 12=12월
+    var day = today.getDate();
+    var yoil = today.getDay();
+    //yoil=요일
+    //1=월, 2=화, 6=토, *0=일*
+    var hour = today.getHours();
+    var minute = today.getMinutes();
+    var second = today.getSeconds();
+
+    document.getElementById("mhs").onclick = function() {
+        if (yoil == 1) {
+            //물리
+            alert("월요일 물화생은 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 2) {
+            //화학
+            alert("화요일 물화생은 화학입니다.");
+            self.location = "https://kaw.ebsoc.co.kr/class/22chemi";
+        } else if (yoil == 3) {
+            //생명
+            alert("수요일 물화생은 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour <= 13) {
+            //생명
+            alert("목요일 4교시 물화생은 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour >= 14) {
+            //화학
+            alert("목요일 6교시 물화생은 화학입니다.");
+            self.location = "https://kaw.ebsoc.co.kr/class/22chemi";
+        } else if (yoil == 5) {
+            //물리
+            alert("금요일 물화생은 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else {
+            alert("주말입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        }
+    }
+    document.getElementById("hsj").onclick = function() {
+        if (yoil == 1) {
+            //지구
+            alert("월요일 화생지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 2) {
+            //생명
+            alert("화요일 화생지는 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 3) {
+            //화학
+            alert("수요일 화생지는 화학입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour <= 13) {
+            //화학
+            alert("목요일 4교시 화생지는 화학입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour >= 14) {
+            //생명
+            alert("목요일 6교시 화생지는 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 5) {
+            //지구
+            alert("금요일 화생지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else {
+            alert("주말입니다.");
+            self.location = "https://realette.github.io/2-6/sciencesel";
+        }
+    }
+    document.getElementById("mhj").onclick = function() {
+        if (yoil == 1) {
+            //지구
+            alert("월요일 물화지는 화학입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 2) {
+            //생명
+            alert("화요일 물화지는 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 3) {
+            //화학
+            alert("수요일 물화지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour <= 13) {
+            //화학
+            alert("목요일 4교시 물화지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour >= 14) {
+            //생명
+            alert("목요일 6교시 물화지는 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 5) {
+            //지구
+            alert("금요일 물화지는 화학입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else {
+            alert("주말입니다.");
+            self.location = "https://realette.github.io/2-6/sciencesel";
+        }
+    }
+    document.getElementById("물생지").onclick = function() {
+        if (yoil == 1) {
+            //지구
+            alert("월요일 물생지는 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 2) {
+            //생명
+            alert("화요일 물생지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 3) {
+            //화학
+            alert("수요일 물생지는 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour <= 13) {
+            //화학
+            alert("목요일 4교시 물생지는 물리입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 4 && hour >= 14) {
+            //생명
+            alert("목요일 6교시 물생지는 지구입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else if (yoil == 5) {
+            //지구
+            alert("금요일 물생지는 생명입니다.");
+            self.location = "https://realette.github.io/2-6/noinput";
+        } else {
+            alert("주말입니다.");
+            self.location = "https://realette.github.io/2-6/sciencesel";
+        }
+    }
+
+    document.getElementById("button").onclick = function() {
+        self.location = "https://realette.github.io/2-6/sciencesel";
+    }
+</script>
+
+</html>
