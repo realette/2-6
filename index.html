@@ -93,11 +93,11 @@
         <table border="1px">
             <tr class="yoil">
                 <th></th>
-                <th class="mon">월</th>
-                <th class="tue">화</th>
-                <th class="wed">수</th>
-                <th class="thu">목</th>
-                <th class="fri">금</th>
+                <th id="mon" class="mon">월</th>
+                <th id="tue" class="tue">화</th>
+                <th id="wed" class="wed">수</th>
+                <th id="thu" class="thu">목</th>
+                <th id="fri" class="fri">금</th>
             </tr>
             <tr class="fir">
                 <td>1교시</td>
@@ -176,6 +176,7 @@
         var second = today.getSeconds();
 
         if (yoil == 1) {
+            document.getElementById("mon").style.backgroundColor = "#8CDCFE";
             document.getElementById("monfir").style.backgroundColor = "#8CDCFE";
             document.getElementById("monsec").style.backgroundColor = "#8CDCFE";
             document.getElementById("monthi").style.backgroundColor = "#8CDCFE";
@@ -189,28 +190,29 @@
             } else if (hour * 100 + minute >= 950 && hour * 100 + minute < 1040) {
                 document.getElementById("monsec").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "월요일 2교시"
-            } else if (hour * 100 + minute >= 1050 && hour * 100 + minute < 1140) {
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
                 document.getElementById("monthi").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "월요일 3교시"
-            } else if (hour * 100 + minute >= 1150 && hour * 100 + minute < 1240) {
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
                 document.getElementById("monfou").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "월요일 4교시"
-            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1340) {
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
                 document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "점심시간"
-            } else if (hour * 100 + minute >= 1340 && hour * 100 + minute < 1430) {
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
                 document.getElementById("monfif").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "월요일 5교시"
-            } else if (hour * 100 + minute >= 1440 && hour * 100 + minute < 1530) {
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
                 document.getElementById("monsix").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "월요일 6교시"
-            } else if (hour * 100 + minute >= 1540 && hour * 100 + minute < 1630) {
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
                 document.getElementById("monsev").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "월요일 7교시"
             } else {
-                document.getElementById("currentClass").innerText = "쉬는 시간"
+                document.getElementById("currentClass").innerText = "휴식"
             }
         } else if (yoil == 2) {
+            document.getElementById("tue").style.backgroundColor = "#8CDCFE";
             document.getElementById("tuefir").style.backgroundColor = "#8CDCFE";
             document.getElementById("tuesec").style.backgroundColor = "#8CDCFE";
             document.getElementById("tuethi").style.backgroundColor = "#8CDCFE";
@@ -222,31 +224,32 @@
             if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
                 document.getElementById("tuefir").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 1교시"
-            } else if (hour * 100 + minute >= 950 && hour * 100 + minute < 1040) {
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
                 document.getElementById("tuesec").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 2교시"
-            } else if (hour * 100 + minute >= 1050 && hour * 100 + minute < 1140) {
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
                 document.getElementById("tuethi").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 3교시"
-            } else if (hour * 100 + minute >= 1150 && hour * 100 + minute < 1240) {
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
                 document.getElementById("tuefou").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 4교시"
-            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1340) {
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
                 document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "점심시간"
-            } else if (hour * 100 + minute >= 1340 && hour * 100 + minute < 1430) {
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
                 document.getElementById("tuefif").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 5교시"
-            } else if (hour * 100 + minute >= 1440 && hour * 100 + minute < 1530) {
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
                 document.getElementById("tuesix").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 6교시"
-            } else if (hour * 100 + minute >= 1540 && hour * 100 + minute < 1630) {
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
                 document.getElementById("tuesev").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "화요일 7교시"
             } else {
-                document.getElementById("currentClass").innerText = "쉬는 시간"
+                document.getElementById("currentClass").innerText = "휴식"
             }
         } else if (yoil == 3) {
+            document.getElementById("wed").style.backgroundColor = "#8CDCFE";
             document.getElementById("wedfir").style.backgroundColor = "#8CDCFE";
             document.getElementById("wedsec").style.backgroundColor = "#8CDCFE";
             document.getElementById("wedthi").style.backgroundColor = "#8CDCFE";
@@ -258,31 +261,32 @@
             if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
                 document.getElementById("wedfir").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 1교시"
-            } else if (hour * 100 + minute >= 950 && hour * 100 + minute < 1040) {
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
                 document.getElementById("wedsec").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 2교시"
-            } else if (hour * 100 + minute >= 1050 && hour * 100 + minute < 1140) {
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
                 document.getElementById("wedthi").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 3교시"
-            } else if (hour * 100 + minute >= 1150 && hour * 100 + minute < 1240) {
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
                 document.getElementById("wedfou").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 4교시"
-            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1340) {
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
                 document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "점심시간"
-            } else if (hour * 100 + minute >= 1340 && hour * 100 + minute < 1430) {
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
                 document.getElementById("wedfif").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 5교시"
-            } else if (hour * 100 + minute >= 1440 && hour * 100 + minute < 1530) {
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
                 document.getElementById("wedsix").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 6교시"
-            } else if (hour * 100 + minute >= 1540 && hour * 100 + minute < 1630) {
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
                 document.getElementById("wedsev").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "수요일 7교시"
             } else {
-                document.getElementById("currentClass").innerText = "쉬는 시간"
+                document.getElementById("currentClass").innerText = "휴식"
             }
         } else if (yoil == 4) {
+            document.getElementById("thu").style.backgroundColor = "#8CDCFE";
             document.getElementById("thufir").style.backgroundColor = "#8CDCFE";
             document.getElementById("thusec").style.backgroundColor = "#8CDCFE";
             document.getElementById("thuthi").style.backgroundColor = "#8CDCFE";
@@ -294,31 +298,32 @@
             if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
                 document.getElementById("thufir").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 1교시"
-            } else if (hour * 100 + minute >= 950 && hour * 100 + minute < 1040) {
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
                 document.getElementById("thusec").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 2교시"
-            } else if (hour * 100 + minute >= 1050 && hour * 100 + minute < 1140) {
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
                 document.getElementById("thuthi").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 3교시"
-            } else if (hour * 100 + minute >= 1150 && hour * 100 + minute < 1240) {
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
                 document.getElementById("thufou").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 4교시"
-            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1340) {
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
                 document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "점심시간"
-            } else if (hour * 100 + minute >= 1340 && hour * 100 + minute < 1430) {
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
                 document.getElementById("thufif").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 5교시"
-            } else if (hour * 100 + minute >= 1440 && hour * 100 + minute < 1530) {
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
                 document.getElementById("thusix").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 6교시"
-            } else if (hour * 100 + minute >= 1540 && hour * 100 + minute < 1630) {
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
                 document.getElementById("thusev").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "목요일 7교시"
             } else {
-                document.getElementById("currentClass").innerText = "쉬는 시간"
+                document.getElementById("currentClass").innerText = "휴식"
             }
         } else if (yoil == 5) {
+            document.getElementById("fri").style.backgroundColor = "#8CDCFE";
             document.getElementById("frifir").style.backgroundColor = "#8CDCFE";
             document.getElementById("frisec").style.backgroundColor = "#8CDCFE";
             document.getElementById("frithi").style.backgroundColor = "#8CDCFE";
@@ -330,32 +335,32 @@
             if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
                 document.getElementById("frifir").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 1교시"
-            } else if (hour * 100 + minute >= 950 && hour * 100 + minute < 1040) {
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
                 document.getElementById("frisec").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 2교시"
-            } else if (hour * 100 + minute >= 1050 && hour * 100 + minute < 1140) {
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
                 document.getElementById("frithi").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 3교시"
-            } else if (hour * 100 + minute >= 1150 && hour * 100 + minute < 1240) {
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
                 document.getElementById("frifou").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 4교시"
-            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1340) {
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
                 document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "점심시간"
-            } else if (hour * 100 + minute >= 1340 && hour * 100 + minute < 1430) {
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
                 document.getElementById("frifif").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 5교시"
-            } else if (hour * 100 + minute >= 1440 && hour * 100 + minute < 1530) {
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
                 document.getElementById("frisix").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 6교시"
-            } else if (hour * 100 + minute >= 1540 && hour * 100 + minute < 1630) {
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
                 document.getElementById("frisev").style.backgroundColor = "#2CA5FF";
                 document.getElementById("currentClass").innerText = "금요일 7교시"
             } else {
-                document.getElementById("currentClass").innerText = "쉬는 시간"
+                document.getElementById("currentClass").innerText = "휴식"
             }
         } else {
-            document.getElementById("currentClass").innerText = "쉬는 시간"
+            document.getElementById("currentClass").innerText = "휴식"
         }
 
 
