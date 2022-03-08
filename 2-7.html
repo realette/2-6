@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2학년 6반 시간표</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="build" content="2022.3.7">
+    <meta name="author" content="주영욱">
+    <meta name="lang" content="ko">
+    <style>
+        body {
+            font-size: 200%;
+        }
+        
+        #title {
+            margin: 0;
+        }
+        
+        #box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .lunch {
+            text-align: center;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .addtext {
+            display: inline-block;
+            margin-top: 3pt;
+            width: auto;
+        }
+        
+        table {
+            text-align: center;
+            width: 50vw;
+        }
+        
+        #currentClass {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 150%;
+            }
+            #title {
+                margin: 0;
+            }
+            #box {
+                position: absolute;
+                width: fit-content;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .lunch {
+                text-align: center;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            .addtext {
+                display: inline-block;
+                margin-top: 3pt;
+                width: auto;
+            }
+            table {
+                width: 100vw;
+            }
+            #currentClass {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1 id="title">2학년 8반</h1>
+        <h3 id="currentClass"></h3>
+        <table border="1px">
+            <tr class="yoil">
+                <th></th>
+                <th id="mon" class="mon">월</th>
+                <th id="tue" class="tue">화</th>
+                <th id="wed" class="wed">수</th>
+                <th id="thu" class="thu">목</th>
+                <th id="fri" class="fri">금</th>
+            </tr>
+            <tr class="fir">
+                <td>1교시</td>
+                <td id="monfir" class="mon"><a target="_blank" href="https://realette.github.io/2-6/science">과학</a></td>
+                <td id="tuefir" class="tue"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92/course">미창</a></td>
+                <td id="wedfir" class="wed"><a target="_blank" href="https://classroom.google.com/u/1/c/NDY4NjY3MzYwNTI0">영어</a></td>
+                <td id="thufir" class="thu"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/okringg8/course">한문</a></td>
+                <td id="frifir" class="fri"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92">생윤</a></td>
+            </tr>
+            <tr class="sec">
+                <td>2교시</td>
+                <td id="monsec" class="mon"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92/course">미창</a></td>
+                <td id="tuesec" class="tue"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkyMjM3">수학</a></td>
+                <td id="wedsec" class="wed"><a target="_blank" href="https://realette.github.io/2-6/science">지학</a></td>
+                <td id="thusec" class="thu"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/jinro68/course">진로</a></td>
+                <td id="frisec" class="fri"><a target="_blank" href="https://realette.github.io/2-6/science">과학</a></td>
+            </tr>
+            <tr class="thi">
+                <td>3교시</td>
+                <td id="monthi" class="mon"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/khsports56789/course">운동</a></td>
+                <td id="tuethi" class="tue"><a target="_blank" href="https://classroom.google.com/u/1/c/NDY4NjY3MzYwNTI0">영어</a></td>
+                <td id="wedthi" class="wed"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/wmfrjdnsansgkr/course">문학</a></td>
+                <td id="thuthi" class="thu"><a target="_blank" href="https://classroom.google.com/u/1/c/NDY4NjY3MzYwNTI0">영어</a></td>
+                <td id="frithi" class="fri"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/khsports56789/course">운동</a></td>
+            </tr>
+            <tr class="fou">
+                <td>4교시</td>
+                <td id="monfou" class="mon"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkyMjM3">수학</a></td>
+                <td id="tuefou" class="tue"><a target="_blank" href="https://realette.github.io/2-6/science">과학</a></td>
+                <td id="wedfou" class="wed"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkyMjM3">수학</a></td>
+                <td id="thufou" class="thu"><a target="_blank" href="https://realette.github.io/2-6/science">과학</a></td>
+                <td id="frifou" class="fri"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/okringg8/course">한문</a></td>
+            </tr>
+            <tr class="lunch">
+                <td></td>
+                <td id="lunch" class="everyday" colspan="5">점심시간</td>
+            </tr>
+            <tr class="fif">
+                <td>5교시</td>
+                <td id="monfif" class="mon"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sangbogi28/course">창진</a></td>
+                <td id="tuefif" class="tue"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/wmfrjdnsansgkr/course">문학</a></td>
+                <td id="wedfif" class="wed"><a target="_blank" href="">창율</a></td>
+                <td id="thufif" class="thu"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/sr92/course">미창</a></td>
+                <td id="frifif" class="fri"><a target="_blank" href="https://classroom.google.com/u/1/c/NDY4NjY3MzYwNTI0">영어</a></td>
+            </tr>
+            <tr class="six">
+                <td>6교시</td>
+                <td id="monsix" class="mon"><a target="_blank" href="https://classroom.google.com/u/1/c/NDY4NjY3MzYwNTI0">영어</a></td>
+                <td id="tuesix" class="tue"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkxMDc4">생윤</a></td>
+                <td id="wedsix" class="wed"><a target="_blank" href="">창율</a></td>
+                <td id="thusix" class="thu"><a target="_blank" href="https://realette.github.io/2-6/science">과학</a></td>
+                <td id="frisix" class="fri"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/wmfrjdnsansgkr/course">문학</a></td>
+            </tr>
+            <tr class="sev">
+                <td>7교시</td>
+                <td id="monsev" class="mon"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/wmfrjdnsansgkr/course">문학</a></td>
+                <td id="tuesev" class="tue"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/26cb">창봉</a></td>
+                <td id="wedsev" class="wed"></td>
+                <td id="thusev" class="thu"><a target="_blank" href="https://kaw.ebsoc.co.kr/class/wmfrjdnsansgkr/course">문학</a></td>
+                <td id="frisev" class="fri"><a target="_blank" href="https://classroom.google.com/u/1/c/NDcxMDI1MDkyMjM3">수학</a></td>
+            </tr>
+        </table>
+        <h5 class="addtext" id="addtext1" onmouseover="addtext1()" onmouseout="addtext1out()">시간 변동 | ""</h5>
+    </div>
+
+    <script>
+        today = new Date();
+        var month = today.getMonth() + 1;
+        //1=1월, 2=2월, 3=3월, 12=12월
+        var day = today.getDate();
+        var yoil = today.getDay();
+        //yoil=요일
+        //1=월, 2=화, 6=토, *0=일*
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+
+        if (yoil == 1) {
+            document.getElementById("mon").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monfir").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monsec").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monthi").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monfou").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monfif").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monsix").style.backgroundColor = "#8CDCFE";
+            document.getElementById("monsev").style.backgroundColor = "#8CDCFE";
+            if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
+                document.getElementById("monfir").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 1교시"
+            } else if (hour * 100 + minute >= 950 && hour * 100 + minute < 1040) {
+                document.getElementById("monsec").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 2교시"
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
+                document.getElementById("monthi").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 3교시"
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
+                document.getElementById("monfou").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 4교시"
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
+                document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "점심시간"
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
+                document.getElementById("monfif").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 5교시"
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                document.getElementById("monsix").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 6교시"
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
+                document.getElementById("monsev").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "월요일 7교시"
+            } else {
+                document.getElementById("currentClass").innerText = "휴식"
+            }
+        } else if (yoil == 2) {
+            document.getElementById("tue").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuefir").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuesec").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuethi").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuefou").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuefif").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuesix").style.backgroundColor = "#8CDCFE";
+            document.getElementById("tuesev").style.backgroundColor = "#8CDCFE";
+
+            if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
+                document.getElementById("tuefir").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 1교시"
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
+                document.getElementById("tuesec").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 2교시"
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
+                document.getElementById("tuethi").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 3교시"
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
+                document.getElementById("tuefou").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 4교시"
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
+                document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "점심시간"
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
+                document.getElementById("tuefif").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 5교시"
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                document.getElementById("tuesix").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 6교시"
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
+                document.getElementById("tuesev").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "화요일 7교시"
+            } else {
+                document.getElementById("currentClass").innerText = "휴식"
+            }
+        } else if (yoil == 3) {
+            document.getElementById("wed").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedfir").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedsec").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedthi").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedfou").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedfif").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedsix").style.backgroundColor = "#8CDCFE";
+            document.getElementById("wedsev").style.backgroundColor = "#8CDCFE";
+
+            if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
+                document.getElementById("wedfir").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 1교시"
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
+                document.getElementById("wedsec").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 2교시"
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
+                document.getElementById("wedthi").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 3교시"
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
+                document.getElementById("wedfou").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 4교시"
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
+                document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "점심시간"
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
+                document.getElementById("wedfif").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 5교시"
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                document.getElementById("wedsix").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 6교시"
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
+                document.getElementById("wedsev").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "수요일 7교시"
+            } else {
+                document.getElementById("currentClass").innerText = "휴식"
+            }
+        } else if (yoil == 4) {
+            document.getElementById("thu").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thufir").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thusec").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thuthi").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thufou").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thufif").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thusix").style.backgroundColor = "#8CDCFE";
+            document.getElementById("thusev").style.backgroundColor = "#8CDCFE";
+
+            if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
+                document.getElementById("thufir").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 1교시"
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
+                document.getElementById("thusec").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 2교시"
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
+                document.getElementById("thuthi").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 3교시"
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
+                document.getElementById("thufou").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 4교시"
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
+                document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "점심시간"
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
+                document.getElementById("thufif").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 5교시"
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                document.getElementById("thusix").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 6교시"
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
+                document.getElementById("thusev").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "목요일 7교시"
+            } else {
+                document.getElementById("currentClass").innerText = "휴식"
+            }
+        } else if (yoil == 5) {
+            document.getElementById("fri").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frifir").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frisec").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frithi").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frifou").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frifif").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frisix").style.backgroundColor = "#8CDCFE";
+            document.getElementById("frisev").style.backgroundColor = "#8CDCFE";
+
+            if (hour * 100 + minute >= 850 && hour * 100 + minute < 940) {
+                document.getElementById("frifir").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 1교시"
+            } else if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
+                document.getElementById("frisec").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 2교시"
+            } else if (hour * 100 + minute >= 1040 && hour * 100 + minute < 1140) {
+                document.getElementById("frithi").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 3교시"
+            } else if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
+                document.getElementById("frifou").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 4교시"
+            } else if (hour * 100 + minute >= 1240 && hour * 100 + minute < 1330) {
+                document.getElementById("lunch").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "점심시간"
+            } else if (hour * 100 + minute >= 1330 && hour * 100 + minute < 1430) {
+                document.getElementById("frifif").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 5교시"
+            } else if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                document.getElementById("frisix").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 6교시"
+            } else if (hour * 100 + minute >= 1530 && hour * 100 + minute < 1630) {
+                document.getElementById("frisev").style.backgroundColor = "#2CA5FF";
+                document.getElementById("currentClass").innerText = "금요일 7교시"
+            } else {
+                document.getElementById("currentClass").innerText = "휴식"
+            }
+        } else {
+            document.getElementById("currentClass").innerText = "휴식"
+        }
+
+
+        function addtext1() {
+            document.getElementById("tuefou").style.backgroundColor = "#CE723B";
+            document.getElementById("addtext1").style.color = "#CE723B";
+        }
+
+        function addtext1out() {
+            if (yoil == 2) {
+                if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
+                    document.getElementById("tuefou").style.backgroundColor = "#2CA5FF";
+                } else {
+                    document.getElementById("tuefou").style.backgroundColor = "#8CDCFE";
+                }
+            } else {
+                document.getElementById("tuefou").style.backgroundColor = "white";
+            }
+            document.getElementById("addtext1").style.color = "black";
+        }
+    </script>
+
+</body>
+
+</html>
