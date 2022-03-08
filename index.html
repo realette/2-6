@@ -19,7 +19,7 @@
         
         #box {
             position: absolute;
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -31,6 +31,17 @@
         a {
             color: black;
             text-decoration: none;
+        }
+        
+        .addtext {
+            display: inline-block;
+            margin-top: 3pt;
+            width: auto;
+        }
+        
+        table {
+            text-align: center;
+            width: 50vw;
         }
         
         @media screen and (max-width: 768px) {
@@ -53,6 +64,14 @@
             a {
                 color: black;
                 text-decoration: none;
+            }
+            .addtext {
+                display: inline-block;
+                margin-top: 3pt;
+                width: auto;
+            }
+            table {
+                width: 100vw;
             }
         }
     </style>
@@ -131,9 +150,19 @@
                 <td id="frisev" class="fri"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
             </tr>
         </table>
+        <h5 class="addtext" id="addtext1" onmouseover="addtext1()" onmouseout="addtext1out()">3월 8일 화요일 4교시: 문학</h5>
     </div>
 
     <script>
+        function addtext1() {
+            document.getElementById("tuefou").style.backgroundColor = "rgb(0, 89, 255)";
+            document.getElementById("addtext1").style.color = "rgb(0, 89, 255)";
+        }
+
+        function addtext1out() {
+            document.getElementById("tuefou").style.backgroundColor = "white";
+            document.getElementById("addtext1").style.color = "black";
+        }
     </script>
 
 </body>
