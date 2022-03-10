@@ -164,7 +164,7 @@
                 <td id="frisev" class="fri"><a target="_blank" href="https://classroom.google.com/u/1/c/NDc3OTQ2MDY5MjEy">영어</a></td>
             </tr>
         </table>
-        <h5 class="addtext" id="addtext1" onmouseover="addtext1()" onmouseout="addtext1out()">시간 변동 | 3월 8일 화요일 4교시: 문학</h5>
+        <h5 class="addtext" id="addtext1" onmouseover="addtext1()" onmouseout="addtext1out()">시간 변동 | 3월 10일 목요일 : 6교시 영어</h5>
     </div>
 
     <script>
@@ -366,19 +366,19 @@
 
 
         function addtext1() {
-            document.getElementById("tuefou").style.backgroundColor = "#CE723B";
+            document.getElementById("thusix").style.backgroundColor = "#CE723B";
             document.getElementById("addtext1").style.color = "#CE723B";
         }
 
         function addtext1out() {
-            if (yoil == 2) {
-                if (hour * 100 + minute >= 1140 && hour * 100 + minute < 1240) {
-                    document.getElementById("tuefou").style.backgroundColor = "#2CA5FF";
+            if (yoil == 4) {
+                if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                    document.getElementById("thusix").style.backgroundColor = "#2CA5FF";
                 } else {
-                    document.getElementById("tuefou").style.backgroundColor = "#8CDCFE";
+                    document.getElementById("thusix").style.backgroundColor = "#8CDCFE";
                 }
             } else {
-                document.getElementById("tuefou").style.backgroundColor = "white";
+                document.getElementById("thusix").style.backgroundColor = "white";
             }
             document.getElementById("addtext1").style.color = "black";
         }
