@@ -164,8 +164,9 @@
                 <td id="frisev" class="fri"><a target="_blank" href="https://realette.github.io/class/noinput">문학</a></td>
             </tr>
         </table>
+        <!--
         <h5 class="addtext" id="addtext1" onmouseover="addtext1()" onmouseout="addtext1out()">시간 변동 | 3월 10일 목요일 6교시: 문학</h5>
-        <h5 class="addtext" id="addtext2" onmouseover="addtext2()" onmouseout="addtext2out()">시간 변동 | 3월 11일 금요일 2교시: 미창</h5>
+        <h5 class="addtext" id="addtext2" onmouseover="addtext2()" onmouseout="addtext2out()">시간 변동 | 3월 11일 금요일 2교시: 미창</h5>-->
     </div>
 
     <script>
@@ -365,42 +366,43 @@
             document.getElementById("currentClass").innerText = "휴식"
         }
 
-
-        function addtext1() {
-            document.getElementById("thusix").style.backgroundColor = "#CE723B";
-            document.getElementById("addtext1").style.color = "#CE723B";
-        }
-
-        function addtext1out() {
-            if (yoil == 4) {
-                if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
-                    document.getElementById("thusix").style.backgroundColor = "#2CA5FF";
-                } else {
-                    document.getElementById("thusix").style.backgroundColor = "#8CDCFE";
+        /*
+                function addtext1() {
+                    document.getElementById("thusix").style.backgroundColor = "#CE723B";
+                    document.getElementById("addtext1").style.color = "#CE723B";
                 }
-            } else {
-                document.getElementById("thusix").style.backgroundColor = "white";
-            }
-            document.getElementById("addtext1").style.color = "black";
-        }
 
-        function addtext2() {
-            document.getElementById("frisec").style.backgroundColor = "#CE723B";
-            document.getElementById("addtext2").style.color = "#CE723B";
-        }
-
-        function addtext2out() {
-            if (yoil == 5) {
-                if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
-                    document.getElementById("frisec").style.backgroundColor = "#2CA5FF";
-                } else {
-                    document.getElementById("frisec").style.backgroundColor = "#8CDCFE";
+                function addtext1out() {
+                    if (yoil == 4) {
+                        if (hour * 100 + minute >= 1430 && hour * 100 + minute < 1530) {
+                            document.getElementById("thusix").style.backgroundColor = "#2CA5FF";
+                        } else {
+                            document.getElementById("thusix").style.backgroundColor = "#8CDCFE";
+                        }
+                    } else {
+                        document.getElementById("thusix").style.backgroundColor = "white";
+                    }
+                    document.getElementById("addtext1").style.color = "black";
                 }
-            } else {
-                document.getElementById("frisec").style.backgroundColor = "white";
-            }
-            document.getElementById("addtext2").style.color = "black";
-        }
+
+                function addtext2() {
+                    document.getElementById("frisec").style.backgroundColor = "#CE723B";
+                    document.getElementById("addtext2").style.color = "#CE723B";
+                }
+
+                function addtext2out() {
+                    if (yoil == 5) {
+                        if (hour * 100 + minute >= 940 && hour * 100 + minute < 1040) {
+                            document.getElementById("frisec").style.backgroundColor = "#2CA5FF";
+                        } else {
+                            document.getElementById("frisec").style.backgroundColor = "#8CDCFE";
+                        }
+                    } else {
+                        document.getElementById("frisec").style.backgroundColor = "white";
+                    }
+                    document.getElementById("addtext2").style.color = "black";
+                }
+                */
     </script>
 
 </body>
